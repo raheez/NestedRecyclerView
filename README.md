@@ -6,7 +6,8 @@ This is a sample code for Horizontal Recycler view inside a Vertical Recycler Vi
 
 
 <img src="https://github.com/raheez/NestedRecyclerView/blob/master/Screenshots/NestedRecyclerView.png" width="240" height="420">
+Basic state
 
 
 <img src="https://github.com/raheez/NestedRecyclerView/blob/master/Screenshots/NestedRecyclerView2.png" width="240" height="420">
-Scrolled Horizontally
+Row 2 is Scrolled Horizontally
