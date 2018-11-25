@@ -24,12 +24,14 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
         llm = new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.VERTICAL,false);
         recyclerView.setLayoutManager(llm);
+
+        //contents to fill the inner recycler view
         string_list = new ArrayList<>();
-        string_list.add("HI");
-        string_list.add("How");
-        string_list.add("you ");
-        string_list.add("doing");
-        string_list.add("bro");
+        string_list.add("Item 1");
+        string_list.add("Item 2");
+        string_list.add("Item 3 ");
+        string_list.add("Item 4");
+        string_list.add("Item 5");
         adapter = new RecyclerAdapter1(getApplicationContext(),string_list);
         recyclerView.setAdapter(adapter);
 

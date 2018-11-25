@@ -14,11 +14,12 @@ import java.util.List;
 
 class ViewHolder extends RecyclerView.ViewHolder{
 
-    RecyclerView rv;
+    RecyclerView rv2;
     public ViewHolder(@NonNull View itemView) {
         super(itemView);
 
-        rv = (RecyclerView) itemView.findViewById(R.id.recyclerView2);
+        //second recycler view
+        rv2 = (RecyclerView) itemView.findViewById(R.id.recyclerView2);
     }
 }
 public class RecyclerAdapter1 extends RecyclerView.Adapter<ViewHolder> {
@@ -42,10 +43,11 @@ public class RecyclerAdapter1 extends RecyclerView.Adapter<ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
 
+        //passing the contents to second recycler views adapter
         RecyclerAdapter2 adapter2 = new RecyclerAdapter2(context,list);
         LinearLayoutManager lm = new LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false);
-        viewHolder.rv.setLayoutManager(lm);
-        viewHolder.rv.setAdapter(adapter2);
+        viewHolder.rv2.setLayoutManager(lm);
+        viewHolder.rv2.setAdapter(adapter2);
 
     }
 
