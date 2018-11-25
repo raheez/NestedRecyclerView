@@ -12,7 +12,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    public RecyclerView recyclerView;
+    public RecyclerView recyclerView1;
     public List<String> string_list;
     public RecyclerAdapter1 adapter;
     public LinearLayoutManager llm;
@@ -21,9 +21,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-        recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
+        recyclerView1 = (RecyclerView)findViewById(R.id.recyclerView);
         llm = new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.VERTICAL,false);
-        recyclerView.setLayoutManager(llm);
+        recyclerView1.setLayoutManager(llm);
+        recyclerView1.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
+
 
         //contents to fill the inner recycler view
         string_list = new ArrayList<>();
@@ -33,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         string_list.add("Item 4");
         string_list.add("Item 5");
         adapter = new RecyclerAdapter1(getApplicationContext(),string_list);
-        recyclerView.setAdapter(adapter);
+        recyclerView1.setAdapter(adapter);
 
     }
 }
