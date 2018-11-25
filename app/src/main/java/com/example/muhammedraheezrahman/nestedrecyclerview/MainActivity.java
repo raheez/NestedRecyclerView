@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.example.muhammedraheezrahman.nestedrecyclerview.RecyclerAdapter.RecyclerAdapter1;
+import com.example.muhammedraheezrahman.nestedrecyclerview.RecyclerAdapters.RecyclerAdapter1;
 
 import java.util.ArrayList;
 import java.util.List;

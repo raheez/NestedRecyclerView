@@ -1,4 +1,4 @@
-package com.example.muhammedraheezrahman.nestedrecyclerview.RecyclerAdapter;
+package com.example.muhammedraheezrahman.nestedrecyclerview.RecyclerAdapters;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
